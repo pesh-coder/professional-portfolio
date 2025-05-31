@@ -29,7 +29,7 @@ def get_env_variable(var_name):
     except KeyError:
         raise ImproperlyConfigured(f"Set the {var_name} environment variable.")
 
-SECRET_KEY = 'django-insecure-sozdo+ad%wv0th$9_5^g+gcl9kuaxpta0f5_!ud1&c7g8%_ccb'
+SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 # SECURITY WARNING: keep the secret key used in production secret!
 
 # SECURITY WARNING: don't run with debug turned on in production!
