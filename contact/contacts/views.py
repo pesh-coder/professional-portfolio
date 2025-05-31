@@ -23,7 +23,7 @@ def contact_view(request):
             messages.error(request, "There was an error. Please correct the form below.")
     else:
         form = ContactForm()
-    return render(request, 'contacts/portfolio.html', {'form': form})
+    return render(request, 'contacts/index.html', {'form': form})
 
 
 
