@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import ContactForm
 from django.core.mail import send_mail
 from django.contrib import messages
+from django.http import JsonResponse
 # Create your views here.
 
 
@@ -24,6 +25,11 @@ def contact_view(request):
     else:
         form = ContactForm()
     return render(request, 'contacts/index.html', {'form': form})
+
+
+def health_check(request):
+    return JsonResponse({'status': 'ok'})
+
 
 
 
