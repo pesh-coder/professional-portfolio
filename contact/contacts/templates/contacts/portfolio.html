@@ -1,0 +1,356 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patience Sitati Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 bg-black text-white fixed top-0 w-full z-50">
+    <a href="#" class="text-xl font-bold">PORTFOLIO.</a>
+    <nav class="space-x-6">
+      <a href="#home" class="hover:text-yellow-400">Home</a>
+      <a href="#services" class="hover:text-yellow-400">Services</a>
+      <a href="#skills" class="hover:text-yellow-400">Skills</a>
+      <a href="#latest-project" class="hover:text-yellow-400">Projects</a>
+      <a href="#contact" class="hover:text-yellow-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex items-center bg-black text-white px-8 pt-32 pb-16">
+  <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-12">
+    
+    <!-- Text Left -->
+    <div class="lg:w-1/2 space-y-6">
+      <h3 class="text-lg sm:text-xl">Hello, Its Me</h3>
+      <h1 class="text-4xl sm:text-5xl font-bold">Patience Sitati</h1>
+      <h3 class="text-lg sm:text-xl">And I'm a <span class="text-yellow-400 font-semibold home-text"></span></h3>
+      <p class="text-base leading-relaxed">
+        I am a skilled full-stack junior developer with expertise in building robust applications, an SEO content creator focused on high-ranking strategies, and a UI/UX designer delivering visually engaging, user-centric designs.
+      </p>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://github.com/pesh-coder/" target="_blank" class="hover:text-yellow-400 w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" class="w-full h-full">
+                <path d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sitatiwritescode/" target="_blank" class="hover:text-yellow-400"><i class='bx bxl-linkedin'></i></a>
+        <a href="https://www.pinterest.com/glutenfreeveganhaven/_created/" target="_blank" class="hover:text-yellow-400"><i class='bx bxl-pinterest'></i></a>
+      </div>
+      <a href="{% static 'files/Patience_Sitati_CV.pdf' %}" download class="inline-block bg-yellow-400 text-black px-6 py-2 rounded hover:bg-yellow-500 transition duration-300 font-medium">
+      Download My CV
+      </a>
+    </div>
+
+    <!-- Image Right -->
+    <div class="lg:w-1/2 flex justify-center">
+      <img src="/static/imgs/prof_pic.jpg/" alt="Patience Sitati" class="w-80 h-auto rounded-lg" />
+    </div>
+
+  </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-900 px-8 py-16">
+    <div class="max-w-6xl mx-auto">
+      <h1 class="text-3xl font-bold text-center mb-10">My <span class="text-yellow-400">Services</span></h1>
+      <div class="grid gap-8 md:grid-cols-3">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+          <i class='bx bx-code text-4xl text-pink-300 mb-4'></i>
+          <h2 class="text-xl font-semibold mb-2">Full-Stack Developer</h2>
+          <p class="mb-4">Builds scalable applications with expertise in front-end and back-end technologies. Crafts responsive designs, ensuring seamless functionality and user experience.</p>
+          
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+          <i class='bx bx-crop text-4xl text-green-300 mb-4'></i>
+          <h2 class="text-xl font-semibold mb-2">SEO Content Creator</h2>
+          <p class="mb-4">Boosts organic traffic through high-performing content across blogs, social media, and websites. Combines keyword strategy, storytelling, video demos, and visual design (Canva) to enhance brand visibility and audience engagement.</p>
+          
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+          <i class='bx bxl-apple text-4xl text-gray-300 mb-4'></i>
+          <h2 class="text-xl font-semibold mb-2">UI/UX Designer</h2>
+          <p class="mb-4">Creates user-friendly designs with Figma. Delivers visually appealing interfaces that enhance usability and engagement.</p>
+          <a href="https://www.figma.com/proto/bsQCRy83htjVtzMuNLNr1A/Group-4a?node-id=100-2245&p=f&t=3Ays6z3LE6GKhER1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=100%3A2245/" target="_blank" class="text-yellow-400 hover:underline">Sample Prototype</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="skills" class="bg-black text-white px-8 py-16">
+  <div class="max-w-6xl mx-auto">
+    <h1 class="text-3xl font-bold text-center mb-10">My <span class="text-yellow-400">Skills</span></h1>
+    <div class="grid md:grid-cols-2 gap-10">
+      
+      <!-- Technical Skills -->
+      <div>
+        <h2 class="text-xl font-semibold mb-4">Technical Skills</h2>
+        <div class="space-y-4">
+          <!-- HTML -->
+          <div>
+            <div class="flex justify-between items-center">
+              <span><i class='bx bxl-html5 text-orange-500'></i> HTML</span>
+              <span>90%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded h-2">
+              <div class="bg-yellow-400 h-2 rounded" style="width: 90%"></div>
+            </div>
+          </div>
+          <!-- CSS -->
+          <div>
+            <div class="flex justify-between items-center">
+              <span><i class='bx bxl-css3 text-blue-500'></i> CSS</span>
+              <span>70%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded h-2">
+              <div class="bg-yellow-400 h-2 rounded" style="width: 60%"></div>
+            </div>
+          </div>
+          <!-- JavaScript -->
+          <div>
+            <div class="flex justify-between items-center">
+              <span><i class='bx bxl-javascript text-yellow-300'></i> JavaScript</span>
+              <span>20%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded h-2">
+              <div class="bg-yellow-400 h-2 rounded" style="width: 20%"></div>
+            </div>
+          </div>
+          <!-- Python -->
+          <div>
+            <div class="flex justify-between items-center">
+              <span><i class='bx bxl-python text-pink-400'></i> Python</span>
+              <span>80%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded h-2">
+              <div class="bg-yellow-400 h-2 rounded" style="width: 80%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-between items-center">
+              <span><i class='bx bx-crop text-green-300'></i> SEO</span>
+              <span>60%</span>
+            </div>
+            <div class="w-full bg-gray-700 rounded h-2">
+              <div class="bg-yellow-400 h-2 rounded" style="width: 60%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Skills -->
+      <div class="flex flex-col items-center">
+        <h2 class="text-xl font-semibold mb-4">Professional Skills</h2>
+        <div class="grid grid-cols-2 gap-6">
+          <!-- One radial bar for each skill -->
+          <div class="text-center">
+            <div class="relative w-24 h-24 mx-auto mb-2">
+              <svg class="transform -rotate-90" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="gray" stroke-width="10" fill="none"/>
+                <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="10" fill="none" stroke-dasharray="251" stroke-dashoffset="13"/>
+              </svg>
+              <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">95%</span>
+            </div>
+            <p>Creativity</p>
+          </div>
+          <div class="text-center">
+            <div class="relative w-24 h-24 mx-auto mb-2">
+              <svg class="transform -rotate-90" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="gray" stroke-width="10" fill="none"/>
+                <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="10" fill="none" stroke-dasharray="251" stroke-dashoffset="25"/>
+              </svg>
+              <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">90%</span>
+            </div>
+            <p>Communication</p>
+          </div>
+          <div class="text-center">
+            <div class="relative w-24 h-24 mx-auto mb-2">
+              <svg class="transform -rotate-90" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="gray" stroke-width="10" fill="none"/>
+                <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="10" fill="none" stroke-dasharray="251" stroke-dashoffset="25"/>
+              </svg>
+              <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">90%</span>
+            </div>
+            <p>Problem Solving</p>
+          </div>
+          <div class="text-center">
+            <div class="relative w-24 h-24 mx-auto mb-2">
+              <svg class="transform -rotate-90" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="40" stroke="gray" stroke-width="10" fill="none"/>
+                <circle cx="50" cy="50" r="40" stroke="yellow" stroke-width="10" fill="none" stroke-dasharray="251" stroke-dashoffset="25"/>
+              </svg>
+              <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold">90%</span>
+            </div>
+            <p>Team Work</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+<!--Latest Projects-->
+<section id="latest-project" class="bg-gray-900 px-8 py-16">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10">My Latest <span class="text-yellow-400">Projects</span></h2>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Project 1: Inventory Management System -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+            <i class='bx bx-package text-yellow-400 mb-2 text-4xl'></i>
+            <h3 class="text-xl font-semibold mb-2 text-white">Inventory Management System</h3>
+            <p class="text-gray-300 mb-4">A full-stack Django application for tracking stock, suppliers, and sales. Built with Django, sqlite, and TailwindCSS.</p>
+            <a href="https://grocery-system.onrender.com/" target="_blank" class="text-yellow-400 hover:underline">View Protected Live Demo</a>
+            <p class="text-sm text-gray-400">*Access requires credentials. Contact me to get access.</p>
+        </div>
+
+        <!-- Project 2: Video Showcase -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out space-y-2">
+            <i class='bx bx-video text-yellow-400 text-4xl'></i>
+            <h3 class="text-xl font-semibold text-white">Project Demo Video</h3>
+            <div class="aspect-w-16 aspect-h-9">
+            <video controls class="w-full h-60 object-cover rounded">
+                <source src="/static/imgs/little_genius.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+            <a href="/static/imgs/little_genius.mp4/" download class="text-yellow-400 hover:underline">Download Video</a>
+        </div>
+
+        <!-- Project 3: Pinterest Account -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:scale-105 transition duration-300 ease-in-out">
+            <i class='bx bxl-pinterest text-yellow-400 text-4xl mb-2'></i>
+            <h3 class="text-xl font-semibold text-white mb-2">Pinterest Showcase</h3>
+            <p class="text-gray-300 mb-4">Browse my Pinterest for creative design boards, mood boards, and aesthetic inspirations.</p>
+            <a href="https://www.pinterest.com/glutenfreeveganhaven/" target="_blank" class="text-yellow-400 hover:underline">Visit Profile</a>
+        </div>
+    </div>
+  </div>
+</section>
+
+<!--Contact-->
+<section id="contact" class="relative px-8 py-16 bg-black text-white overflow-hidden">
+
+  <div class="relative z-10 max-w-6xl mx-auto flex flex-col lg:flex-row gap-10">
+    
+    <!-- Contact Text -->
+    <div class="lg:w-1/2 space-y-4">
+      <h2 class="text-3xl font-bold">Contact <span class="text-yellow-400">Me</span></h2>
+      <h4 class="text-xl">Let's Create Something Amazing Together</h4>
+      <p>Have a project in mind? Whether it's web development, content creation, or design, I'm here to bring your ideas to life.</p>
+      <div class="space-y-2">
+        <p><i class="bx bxs-envelope text-yellow-400"></i> patiencesitati99@gmail.com</p>
+        <p><i class="bx bxs-phone text-yellow-400"></i> +256 757-483279</p>
+      </div>
+      <div class="flex space-x-4 text-xl">
+        <a href="https://github.com/pesh-coder/" target="_blank" class="hover:text-yellow-400 w-6 h-6">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="currentColor" class="w-full h-full">
+                <path d="M 32 10 C 19.85 10 10 19.85 10 32 C 10 44.15 19.85 54 32 54 C 44.15 54 54 44.15 54 32 C 54 19.85 44.15 10 32 10 z M 32 14 C 41.941 14 50 22.059 50 32 C 50 40.238706 44.458716 47.16934 36.904297 49.306641 C 36.811496 49.1154 36.747844 48.905917 36.753906 48.667969 C 36.784906 47.458969 36.753906 44.637563 36.753906 43.601562 C 36.753906 41.823563 35.628906 40.5625 35.628906 40.5625 C 35.628906 40.5625 44.453125 40.662094 44.453125 31.246094 C 44.453125 27.613094 42.554688 25.720703 42.554688 25.720703 C 42.554688 25.720703 43.551984 21.842266 42.208984 20.197266 C 40.703984 20.034266 38.008422 21.634812 36.857422 22.382812 C 36.857422 22.382813 35.034 21.634766 32 21.634766 C 28.966 21.634766 27.142578 22.382812 27.142578 22.382812 C 25.991578 21.634813 23.296016 20.035266 21.791016 20.197266 C 20.449016 21.842266 21.445312 25.720703 21.445312 25.720703 C 21.445312 25.720703 19.546875 27.611141 19.546875 31.244141 C 19.546875 40.660141 28.371094 40.5625 28.371094 40.5625 C 28.371094 40.5625 27.366329 41.706312 27.265625 43.345703 C 26.675939 43.553637 25.872132 43.798828 25.105469 43.798828 C 23.255469 43.798828 21.849984 42.001922 21.333984 41.169922 C 20.825984 40.348922 19.7845 39.660156 18.8125 39.660156 C 18.1725 39.660156 17.859375 39.981656 17.859375 40.347656 C 17.859375 40.713656 18.757609 40.968484 19.349609 41.646484 C 20.597609 43.076484 20.574484 46.292969 25.021484 46.292969 C 25.547281 46.292969 26.492043 46.171872 27.246094 46.068359 C 27.241926 47.077908 27.230199 48.046135 27.246094 48.666016 C 27.251958 48.904708 27.187126 49.114952 27.09375 49.306641 C 19.540258 47.168741 14 40.238046 14 32 C 14 22.059 22.059 14 32 14 z"/>
+            </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/sitatiwritescode/" target="_blank"><i class="bx bxl-linkedin hover:text-yellow-400"></i></a>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="lg:w-1/2">
+      {% if messages %}
+        <div class="mb-4">
+            {% for message in messages %}
+            <div class="alert {% if message.tags == 'success' %}bg-green-500{% else %}bg-red-500{% endif %} text-white p-3 rounded">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+      {% endif %}
+        <!--#contact helps to keep the form in the same position even after submission-->
+        <form method="POST" action="#contact" novalidate class="space-y-6">
+        {% csrf_token %}
+
+            <div>
+                {{ form.name }}
+                {% for error in form.name.errors %}
+                <p class="form-error text-red-400 text-sm mt-1">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <div>
+                {{ form.email }}
+                {% for error in form.email.errors %}
+                <p class="form-error text-red-400 text-sm mt-1">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <div>
+                {{ form.subject }}
+                {% for error in form.subject.errors %}
+                <p class="form-error text-red-400 text-sm mt-1">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <div>
+                {{ form.message }}
+                {% for error in form.message.errors %}
+                <p class="form-error text-red-400 text-sm mt-1">{{ error }}</p>
+                {% endfor %}
+            </div>
+
+            <button type="submit" class="bg-yellow-400 text-black font-medium px-6 py-3 rounded hover:bg-yellow-500 transition">
+                Submit
+            </button>
+        </form>
+
+    </div>
+  </div>
+</section>
+<a href="#home" class="fixed bottom-6 right-6 z-50 bg-yellow-400 hover:bg-yellow-500 text-black p-3 rounded-lg shadow-lg transition duration-300">
+  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+    <path fill-rule="evenodd" d="M3.293 11.707a1 1 0 011.414 0L10 6.414l5.293 5.293a1 1 0 001.414-1.414l-6-6a1 1 0 00-1.414 0l-6 6a1 1 0 010 1.414z" clip-rule="evenodd" />
+  </svg>
+</a>
+<footer class="bg-black text-white text-center py-6 border-t border-gray-800">
+  <p class="text-sm">
+    Developed with ❤️ by <span class="text-yellow-400 font-semibold">Patience Sitati</span> © 2025
+  </p>
+</footer>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+  var typed = new Typed(".home-text", {
+    strings: ["Full-stack Developer", "SEO Content Creator", "UI/UX Designer"],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+  });
+  setTimeout(function () {
+    // Fade out Django alert messages (e.g. success, error)
+    const alerts = document.querySelectorAll('.alert');
+    alerts.forEach(function (alert) {
+      alert.style.transition = 'opacity 0.5s ease';
+      alert.style.opacity = '0';
+      setTimeout(() => alert.remove(), 500); // Fully remove after fade
+    });
+
+    // Fade out individual form field errors
+    const errors = document.querySelectorAll('.form-error');
+    errors.forEach(function (error) {
+      error.style.transition = 'opacity 0.5s ease';
+      error.style.opacity = '0';
+      setTimeout(() => error.remove(), 500);
+    });
+  }, 5000); // 5 seconds
+
+
+
+
+
+</script>
+</body>
+</html>
